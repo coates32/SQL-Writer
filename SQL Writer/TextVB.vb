@@ -156,7 +156,7 @@ DROP TABLE TableName
         strAdvance = strLine + vbNewLine + "Advance stuff:
 
 ------------------------------------------------------------------------
--There are some advance aspects to writing in SQL. One of which is the IFF statement.
+-There are some advance aspects to writing in SQL. One of which is the IIF statement.
 
 --Example
 
