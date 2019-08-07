@@ -32,7 +32,7 @@ Public Class frmMain
     Private Sub DisplayVersion()
         Dim strVersionType As String
 
-        strVersionType = " BETA"
+        strVersionType = " Release"
         Dim strVersionNo As String
 
         strVersionNo = Application.ProductVersion.ToString

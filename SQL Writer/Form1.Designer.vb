@@ -56,9 +56,9 @@ Partial Class frmMain
         Me.btnOpenForm.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnOpenForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnOpenForm.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnOpenForm.Location = New System.Drawing.Point(9, 36)
+        Me.btnOpenForm.Location = New System.Drawing.Point(9, 26)
         Me.btnOpenForm.Name = "btnOpenForm"
-        Me.btnOpenForm.Size = New System.Drawing.Size(293, 31)
+        Me.btnOpenForm.Size = New System.Drawing.Size(381, 41)
         Me.btnOpenForm.TabIndex = 38
         Me.btnOpenForm.Text = "Open SQL Textbox In New Window"
         Me.btnOpenForm.UseVisualStyleBackColor = False
@@ -308,6 +308,7 @@ Partial Class frmMain
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1221, 636)
+        Me.ControlBox = False
         Me.Controls.Add(Me.btnOpenForm)
         Me.Controls.Add(Me.btnImport)
         Me.Controls.Add(Me.btnTableFields)

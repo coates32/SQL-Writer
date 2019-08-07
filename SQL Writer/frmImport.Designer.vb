@@ -157,6 +157,7 @@ Partial Class frmImport
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(895, 575)
+        Me.ControlBox = False
         Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.lblOrigin)
         Me.Controls.Add(Me.btnImport)
