@@ -119,8 +119,7 @@ Public Class frmTableFields
                 DataGridView1.Columns.Add("DataType", "Data Type")
                 For Each row As DataRow In columns.Rows
                     strColumn = row("column_name").ToString
-
-                    Dim colWidth As Integer = CInt(columns.Rows(0)("CHARACTER_MAXIMUM_LENGTH").ToString)
+                    ''Dim em = columns.Rows(0)("CHARACTER_MAXIMUM_LENGTH").ToString
 
                     ''Even when a field is set as a MEMO field it may display as "Varchar" without this IF statement
                     If CheckMemo(thisFile, tableName, strColumn) = 203 Then
@@ -131,7 +130,7 @@ Public Class frmTableFields
                     End If
 
                     If strDataType.ToLower.Equals("varchar") Then
-
+                        Dim colWidth As Integer = CInt(row("CHARACTER_MAXIMUM_LENGTH").ToString)
                         strDataType += "(" & colWidth.ToString & ")"
                     End If
                     DataGridView1.Rows.Add(strColumn, strDataType)

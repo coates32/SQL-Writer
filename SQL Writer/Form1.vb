@@ -66,6 +66,7 @@ Public Class frmMain
 
         Return strFile
     End Function
+
     Private Function Connection() As String ''Not Used
         Dim MyAppDir As String = Environment.CurrentDirectory
 
@@ -438,6 +439,10 @@ Public Class frmMain
 
     Private Sub ClearItems()
         lblFilePath.Text = ""
+        myFile.Help = ""
+        myFile.File = ""
+        myFile.FileFrom = ""
+
         tTip.SetToolTip(lblFilePath, "")
         lstTables.Items.Clear()
         lstTables.Refresh()
